@@ -1,27 +1,15 @@
-<div id="<%= dom_id friend %>">
-  <p>
-    <strong>First name:</strong>
-    <%= friend.first_name %>
-  </p>
-
-  <p>
-    <strong>Last name:</strong>
-    <%= friend.last_name %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= friend.email %>
-  </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= friend.phone %>
-  </p>
-
-  <p>
-    <strong>Twitter:</strong>
-    <%= friend.twitter %>
-  </p>
-
+<div id="<%= dom_id friend %>" class="card mb-4">
+  <div class="card-header">
+    Friend information
+  </div>
+  <div class="card-body">
+    <h5 class="card-title display-4">
+      <%= friend.first_name %>
+      <%= friend.last_name %>
+    </h5>
+    <hr/>
+    <p class="card-text lead">
+      <%= friend.email %> | <%= friend.phone %> |  <%= friend.twitter %>
+    </p>
+  </div>
 </div>
